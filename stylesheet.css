@@ -1,9 +1,10 @@
-body{/*permet d'enlever la bordure inélégante*/
-    margin: 0;
+body {
+  /*permet d'enlever la bordure inélégante*/
+  margin: 0;
 }
 
-li{
-    list-style-type: none;
+li {
+  list-style-type: none;
 }
 
 a {
@@ -35,10 +36,13 @@ a {
   margin: 15px 15px;
   white-space: nowrap;
 }
+/*Say Hello button*/
 .navbar div div.sayHello a {
   border: solid 2px #7510f7;
   border-radius: 25px;
   margin: 5px;
+  color: #7510f7;
+  padding: 10px;
 }
 .navbar div div {
   border: solid 2px #ffffff00;
@@ -46,19 +50,14 @@ a {
 }
 
 .title {
-    padding-top: 30px;
-    margin-bottom: 30px;
+  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .navbar div div a:hover {
   color: #7510f7;
 }
 
-/*Say Hello button*/
-.navbar div div.sayHello a {
-    color: #7510f7;
-    padding: 10px;
-  }
 
 .navbar div div.sayHello a:hover {
   color: white;
@@ -66,59 +65,75 @@ a {
 }
 
 header h1 {
-    text-align: center;
-    margin-top: 100px;   
+  text-align: center;
+  margin-top: 100px;
 }
 
-header p{
-    text-align: center;
+header p {
+  text-align: center;
 }
 
-.avatar{ 
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.avatar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.avatar > img{
-    height: 200px;
-    margin: 30px 0;
+.avatar > img {
+  height: 200px;
+  margin: 30px 0;
 }
 
-.avatar img:nth-child(2){
-    margin-bottom: 0;
+.avatar img:nth-child(2) {
+  margin-bottom: 0;
 }
 
-.violet{
-    background-color:#7510f7;
-    color: white;
-    text-align: center;
-    padding: 150px 200px 350px 200px;
-    line-height: 30px;    
+.violet {
+  background-color: #7510f7;
+  color: white;
+  text-align: center;
+  padding: 150px 200px 350px 200px;
+  line-height: 30px;
 }
 
-.violet p{
-    font-size: 20px;
+.violet p {
+  font-size: 20px;
 }
 
-.violet h2{
-    font-size: 2rem;
+.violet h2 {
+  font-size: 2rem;
 }
 
-.skillplus{
-    margin : 20px 100px;
-    display: flex;
-    border-radius: 50%;
+.skillplus {
+  margin: auto ;
+  width: 80%;
+  display: flex;
+  translate: 0 -200px;
+  background-color: white;
+  border-radius: 15px;
+
 }
 
-.skillplus img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
+.skillplus img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
 }
 
 .skills {
-    border:solid 0.5px rgba(133, 130, 130, 0.432);
-    padding: 0 100px;
+  border: solid 0.5px rgba(133, 130, 130, 0.1);
+  text-align: center;
+  width: 33%;
+}
+
+.skills h4{
+  color: #7510f7;
+}
+
+@media screen (min-width: 1100px)  {
+
+  .skillplus {
+    width:100%;
+  }
 }
