@@ -125,15 +125,52 @@ header p {
   border: solid 0.5px rgba(133, 130, 130, 0.1);
   text-align: center;
   width: 33%;
+  line-height: 1.5;
+ font-size: large;
 }
 
 .skills h4{
   color: #7510f7;
 }
 
-@media screen (min-width: 1100px)  {
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1500px)  {
 
   .skillplus {
-    width:100%;
+    width: 90%;
   }
+  .violet {
+  padding:20% ;
+    
+  }
+}
+
+@media (max-width: 1100px)  {
+
+  .skillplus {
+    width: 100%;
+    translate: 0 -100px;
+    flex-direction: column;
+  }
+  .skills {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px)  {
+
+  .skillplus {
+
+    translate: none;
+  }
+
 }
