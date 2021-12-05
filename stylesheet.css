@@ -1,3 +1,11 @@
+
+/*ici on va declarer les couleurs que l'on utilisera par la suite cela permetra de maintenir le site plus facilement et de changer les couleurs*/
+:root{
+
+  --main-bg-color:#7510f7;
+
+}
+
 body {
   /*permet d'enlever la bordure inélégante*/
   margin: 0;
@@ -11,9 +19,6 @@ a {
   text-decoration: none;
 }
 
-.violet {
-  background-color: #7510f7;
-}
 
 /*logo en haut de page*/
 .logo {
@@ -38,7 +43,7 @@ a {
 }
 /*Say Hello button*/
 .navbar div div.sayHello a {
-  border: solid 2px #7510f7;
+  border: solid 2px var(--main-bg-color);
   border-radius: 25px;
   margin: 5px;
   color: #7510f7;
@@ -55,13 +60,13 @@ a {
 }
 
 .navbar div div a:hover {
-  color: #7510f7;
+  color:var(--main-bg-color);
 }
 
 
 .navbar div div.sayHello a:hover {
   color: white;
-  background-color: #7510f7;
+  background-color:var(--main-bg-color);
 }
 
 header h1 {
@@ -89,7 +94,7 @@ header p {
 }
 
 .violet {
-  background-color: #7510f7;
+  background-color:var(--main-bg-color);
   color: white;
   text-align: center;
   padding: 150px 200px 350px 200px;
@@ -107,6 +112,7 @@ header p {
 .skillplus {
   margin: auto ;
   width: 80%;
+ 
   display: flex;
   translate: 0 -200px;
   background-color: white;
@@ -114,11 +120,12 @@ header p {
 
 }
 
+
 .skillplus img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 20%;
+    width: 20%;
 }
 
 .skills {
@@ -130,7 +137,7 @@ header p {
 }
 
 .skills h4{
-  color: #7510f7;
+  color:var(--main-bg-color);
 }
 
 
@@ -141,7 +148,7 @@ header p {
 
 
 
-
+/*essai des mediaquery */
 
 @media (max-width: 1500px)  {
 
