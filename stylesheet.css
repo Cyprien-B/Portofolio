@@ -99,10 +99,15 @@ header p {
   text-align: center;
   padding: 150px 200px 350px 200px;
   line-height: 30px;
+  
 }
 
 .violet p {
+  
   font-size: 20px;
+  width:min(1300px,90%);
+  margin: 0 auto;
+  
 }
 
 .violet h2 {
@@ -111,15 +116,13 @@ header p {
 
 .skillplus {
   margin: auto ;
-  width: 80%;
- 
+  width:min(1300px,90%);
   display: flex;
   translate: 0 -200px;
   background-color: white;
   border-radius: 15px;
 
 }
-
 
 .skillplus img {
   display: block;
@@ -131,7 +134,7 @@ header p {
 .skills {
   border: solid 0.5px rgba(133, 130, 130, 0.1);
   text-align: center;
-  width: 33%;
+ /* width:33%; ici il n'y a plus aucune utiliter a donner une largeur avec flexbox et de min() dans .skillplus*/
   line-height: 1.5;
  font-size: large;
 }
@@ -142,14 +145,9 @@ header p {
 
 
 
-
-
-
-
-
-
 /*essai des mediaquery */
 
+/* ci dessous un code devenu inutile grace a l'utilisation de width: width:min(1300px,90%);
 @media (max-width: 1500px)  {
 
   .skillplus {
@@ -159,15 +157,16 @@ header p {
   padding:20% ;
     
   }
-}
+}*/ 
 
 @media (max-width: 1100px)  {
 
   .skillplus {
-    width: 100%;
-    translate: 0 -100px;
     flex-direction: column;
+    /*width: 100%;
+     translate: 0 -100px;
   }
+  
   .skills {
     width: 100%;
   }
