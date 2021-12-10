@@ -9,16 +9,17 @@
 body {
   /*permet d'enlever la bordure inélégante*/
   margin: 0;
+  font-family: "europa", sans-serif;
 }
 
 li {
   list-style-type: none;
 }
 
-a {
+/*a {
   text-decoration: none;
 }
-
+*/
 
 /*logo en haut de page*/
 .logo {
@@ -46,7 +47,7 @@ a {
   border: solid 2px var(--main-bg-color);
   border-radius: 25px;
   margin: 5px;
-  color: #7510f7;
+  color: var(--main-bg-color);
   padding: 10px;
 }
 .navbar div div {
@@ -102,12 +103,10 @@ header p {
   
 }
 
-.violet p {
-  
+.violet p {  
   font-size: 20px;
   width:min(1300px,90%);
-  margin: 0 auto;
-  
+  margin: 0 auto;  
 }
 
 .violet h2 {
@@ -115,32 +114,44 @@ header p {
 }
 
 .skillplus {
-  margin: auto ;
-  width:min(1300px,90%);
+  margin: auto;
+  width:min(1000px,90%);
   display: flex;
   translate: 0 -200px;
-  background-color: white;
   border-radius: 15px;
-
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+  position: relative;
+  top: -100px;
 }
 
 .skillplus img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-    width: 20%;
+  margin: 30px auto;
+  width: 12%;
 }
 
 .skills {
-  border: solid 0.5px rgba(133, 130, 130, 0.1);
   text-align: center;
  /* width:33%; ici il n'y a plus aucune utiliter a donner une largeur avec flexbox et de min() dans .skillplus*/
   line-height: 1.5;
- font-size: large;
+  font-size: large;
+  padding: 0 30px;
+}
+
+.skills p{
+  display: inline;
+  font-weight: lighter!important;
+  font-size: 15px;
 }
 
 .skills h4{
   color:var(--main-bg-color);
+}
+
+.skills ul{
+  padding: 0;
+  margin: 0;
 }
 
 .title-3 {
@@ -152,7 +163,6 @@ header p {
   font-size: larger;
   text-align: center;
 }
-
 
 .justDoIt{
   display: flex;
@@ -166,15 +176,13 @@ header p {
   border-radius: 15px;
  opacity: 1;
  position: absolute;
-
-
 }
-
+/*
 .justDoIt img:hover{
   opacity: 0;
-  transition: .25s;
   scale: 1.05;
-}
+  
+}*/
 
 /*.justDoIt p{
   translate: 0 -150px;
@@ -182,22 +190,47 @@ header p {
 .justDoIt div{
   
 }
-.wfdesign p{
+
+.justDoIt p{
+  opacity: 0;
+  margin: 20px;
+  display: flex;
   background-color: #141c3a;
   height: 250px;
   width: 375px;
   border-radius: 15px;
-  translate: 0 -17px;
-  z-index: -1 ;
+  translate: -20px -20px;
   position: relative;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  color: white;
+
+  
+}
+.justDoIt p:hover{
+  opacity: 1;
+  transition: .40s ease-in-out;
+  scale: 1;
+
 }
 
-.whitehorse{
-  background-color: #141c3a;
-  height: 250px;
-  max-height: 250px;
-  border-radius: 15px;
+.justDoIt a{
+  text-align: center;
+  width: 150px;
+  border: solid 2px var(--main-bg-color);
+  border-radius: 25px;
+  margin: 30px auto;
+  color: white;
+  padding: 10px;
 }
+
+.wfdesign a:hover{
+  background-color:var(--main-bg-color);
+  color: #7510f7;
+}
+
 
 /*essai des mediaquery */
 
