@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  text-align: center;
+}
+p {text-align: center;}
 
 /*logo en haut de page*/
 .logo {
@@ -114,7 +118,7 @@ header p {
 .skillplus {
   margin: auto;
   padding-bottom: 40px;
-  width:min(1000px,90%);
+  width:min(1250px,90%);
   display: flex;
   translate: 0 -200px;
   border-radius: 15px;
@@ -208,7 +212,8 @@ header p {
   justify-content: center;
   flex-direction: column;
   z-index: 2;
-  color: white;  
+  color: white;
+  font-size: 20px;  
 }
 
 .justDoIt p:hover{
@@ -270,33 +275,47 @@ header p {
 .company{
   display: flex;
   justify-content: center;
+  margin: 45px 0;
 }
 
 .company img{
   height: 96px;
   width: 282px ;
+  margin: auto;
 
 }
 
 .title3{
   text-align: center;
-  margin: 40px auto;
+  margin: 50px auto;
 }
 
 .parent_cards{
   display: flex;  
+  justify-content: center;
+  
 }
 
 .parent_cards .card{
-  margin: 0px auto;
-  padding: 0 90px;
-  display: flex;  
-  flex-wrap: wrap;
-  justify-content: center;
+  height: 250px;
+  margin: 27px 32px;
+  padding-bottom: 40px;
+  width: 350px;
+  display: flex;
+  translate: 0 -150px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+  position: relative;  
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  
+  
 }
 
+
 .card img{
+  margin: auto;
   height: 42px;
 }
 
@@ -304,17 +323,47 @@ header p {
   color: rgba(0, 0, 0, 0.6);
   text-align: center;
   line-height: 30px;
+  display: block;
+  margin: 0 15px;
 }
-
-
-
-
+.card svg {
+  fill: var(--main-bg-color);
+}
 
 .socials {
   width: 50px;
   height: 50px;
 }
 
+.texteAvantLeFooter {
+ translate: 0 -120px;
+}
+
+.texteAvantLeFooter h2{
+  font-size: 27px;
+  font-weight: 400;
+}
+.texteAvantLeFooter p{
+  font-size: 18px;
+}
+
+.like-btn{
+    display: flex;
+    width: 145px;
+    border: solid 2px var(--main-bg-color);
+    border-radius: 25px;
+    padding: 12px 15px;
+    margin: auto;
+    color: var(--main-bg-color);
+    text-align: justify;
+    vertical-align: sub;
+    fill: var(--main-bg-color);
+}
+.like-btn:hover{
+  background-color: var(--main-bg-color);
+  color: white;
+  transition: ease-in-out .25s;
+}
 
 
 /*essai des mediaquery */
@@ -337,9 +386,26 @@ header p {
     flex-direction: column;
     /*width: 100%;
      translate: 0 -100px;
-  }
+  }*/
+
+}
+
+.parent_cards {
+flex-direction: column;
+
+}
   
-  .skills {
+.justDoIt{
+   flex-direction: column;
+  
+}
+
+.company { 
+  flex-direction: column;
+}
+
+
+  /*.skills {
     width: 100%;
   }
 }
@@ -352,4 +418,3 @@ header p {
   }
 
 }*/
-  }
