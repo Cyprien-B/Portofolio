@@ -342,9 +342,11 @@ header p {
 .texteAvantLeFooter h2{
   font-size: 27px;
   font-weight: 400;
+  margin: 50px 0;
 }
 .texteAvantLeFooter p{
   font-size: 18px;
+  margin: 0 0 40px 0;
 }
 
 .like-btn{
@@ -364,6 +366,7 @@ header p {
   color: white;
   transition: ease-in-out .25s;
 }
+
 
 
 /*essai des mediaquery */
