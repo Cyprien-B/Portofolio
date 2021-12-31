@@ -1,0 +1,423 @@
+/*ici on va declarer les couleurs que l'on utilisera par la suite cela permetra de maintenir le site plus facilement et de changer les couleurs*/
+:root{
+
+  --main-bg-color:#7510f7;
+
+}
+
+body {
+  /*permet d'enlever la bordure inélégante*/
+  margin: 0;
+  font-family: "europa", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+}
+p {text-align: center;}
+
+/*logo en haut de page*/
+.logo {
+  width: 60px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.navbar div {
+  display: flex;
+  /*padding: 0px 50px;*/
+}
+/*  white-space: nowrap; permet d'avoir les mots composé qui ne se sépare pas en responsive*/
+.navbar div div a {
+  margin: 15px 15px;
+  white-space: nowrap;
+}
+/*Say Hello button*/
+.navbar div div.sayHello a {
+  border: solid 2px var(--main-bg-color);
+  border-radius: 25px;
+  margin: 5px;
+  color: var(--main-bg-color);
+  padding: 10px;
+}
+.navbar div div {
+  border: solid 2px #ffffff00;
+  border-radius: 25px;
+}
+
+.title {
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+.navbar div div a:hover {
+  color:var(--main-bg-color);
+}
+
+
+.navbar div div.sayHello a:hover {
+  color: white;
+  background-color:var(--main-bg-color);
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 100px;
+}
+
+header p {
+  text-align: center;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.avatar > img {
+  height: 200px;
+  margin: 30px 0;
+}
+
+.avatar img:nth-child(2) {
+  margin-bottom: 0;
+}
+
+.violet {
+  background-color:var(--main-bg-color);
+  color: white;
+  text-align: center;
+  padding: 150px 200px 350px 200px;
+  line-height: 30px;  
+}
+
+.violet p {  
+  font-size: 20px;
+  width:min(1300px,90%);
+  margin: 0 auto;  
+}
+
+.violet h2 {
+  font-size: 2rem;
+}
+
+.skillplus {
+  margin: auto;
+  padding-bottom: 40px;
+  width:min(1250px,90%);
+  display: flex;
+  translate: 0 -200px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+  position: relative;  
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.skillplus img {
+  display: block;
+  margin: 30px auto;
+  width: 12%;
+}
+
+.skills {
+  text-align: center;
+ /* width:33%; ici il n'y a plus aucune utiliter a donner une largeur avec flexbox et de min() dans .skillplus*/
+  line-height: 1.5;
+  font-size: large;
+  padding: 0 30px;
+}
+
+.skills p{
+  display: inline;
+  font-weight: lighter!important;
+  font-size: 15px;
+}
+
+.skills h4{
+  color:var(--main-bg-color);
+}
+
+.skills ul{
+  padding: 0;
+  margin: 0;
+}
+
+.work {
+  translate: 0 -140px;
+}
+
+.title-3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+#para {
+  font-size: larger;
+  text-align: center;
+}
+
+.justDoIt{
+  display: flex;
+  margin: 0 100px;
+}
+
+.justDoIt img{
+  margin: 0 ;
+  height: 250px;
+  max-height: 250px;
+  border-radius: 15px;
+  opacity: 1;
+  position: absolute;
+}
+/*
+.justDoIt img:hover{
+  opacity: 0;
+  scale: 1.05;
+  
+}*/
+
+/*.justDoIt p{
+  translate: 0 -150px;
+}*/
+.justDoIt div{
+  margin: auto;
+}
+
+.justDoIt p{
+  opacity: 0;
+  margin: 20px;
+  display: flex;
+  background-color: #141c3a;
+  height: 250px;
+  width: 375px;
+  border-radius: 15px;
+  translate: -20px -20px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  color: white;
+  font-size: 20px;  
+}
+
+.justDoIt p:hover{
+  opacity: 1;
+  transition: .40s ease-in-out;
+  scale: 1.;
+}
+
+.justDoIt a{
+  text-align: center;
+  width: 150px;
+  border: solid 2px var(--main-bg-color);
+  border-radius: 25px;
+  margin: 30px auto;
+  color: white;
+  padding: 10px;
+}
+
+.justDoIt a:hover{
+  background-color:var(--main-bg-color);
+  color: #7510f7;
+  color: white;
+  transition: ease-in-out .25s;
+}
+
+.dribbble{
+  display: flex;
+  width: 200px;
+  border: solid 2px var(--main-bg-color);
+  border-radius: 25px;
+  padding: 12px 15px;
+  margin: auto;
+  color: var(--main-bg-color);
+  text-align: justify;
+  vertical-align: sub;
+  fill: var(--main-bg-color);
+}
+
+.dribbble img {
+  width: 25px;
+  fill: white;
+}
+
+.dribbble span{
+  padding: 3px;
+}
+
+#svg-d {
+  width: 20px;
+}
+
+.dribbble:hover {
+  background-color: var(--main-bg-color);
+  color: white;
+  transition: ease-in-out .25s;
+  fill: white;
+}
+
+.company{
+  display: flex;
+  justify-content: center;
+  margin: 45px 0;
+}
+
+.company img{
+  height: 96px;
+  width: 282px ;
+  margin: auto;
+
+}
+
+.title3{
+  text-align: center;
+  margin: 50px auto;
+}
+
+.parent_cards{
+  display: flex;  
+  justify-content: center;
+  
+}
+
+.parent_cards .card{
+  height: 250px;
+  margin: 27px 32px;
+  padding-bottom: 40px;
+  width: 350px;
+  display: flex;
+  translate: 0 -150px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background-color: white;
+  position: relative;  
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
+  
+  
+}
+
+
+.card img{
+  margin: auto;
+  height: 42px;
+}
+
+.card p{
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  line-height: 30px;
+  display: block;
+  margin: 0 15px;
+}
+.card svg {
+  fill: var(--main-bg-color);
+}
+
+.socials {
+  width: 50px;
+  height: 50px;
+}
+
+.texteAvantLeFooter {
+ translate: 0 -120px;
+}
+
+.texteAvantLeFooter h2{
+  font-size: 27px;
+  font-weight: 400;
+  margin: 50px 0;
+}
+.texteAvantLeFooter p{
+  font-size: 18px;
+  margin: 0 0 40px 0;
+}
+
+.like-btn{
+    display: flex;
+    width: 145px;
+    border: solid 2px var(--main-bg-color);
+    border-radius: 25px;
+    padding: 12px 15px;
+    margin: auto;
+    color: var(--main-bg-color);
+    text-align: justify;
+    vertical-align: sub;
+    fill: var(--main-bg-color);
+}
+.like-btn:hover{
+  background-color: var(--main-bg-color);
+  color: white;
+  transition: ease-in-out .25s;
+}
+
+
+
+/*essai des mediaquery */
+
+/* ci dessous un code devenu inutile grace a l'utilisation de width: width:min(1300px,90%);
+@media (max-width: 1500px)  {
+
+  .skillplus {
+    width: 90%;
+  }
+  .violet {
+  padding:20% ;
+    
+  }
+}*/ 
+
+@media (max-width: 1100px)  {
+
+  .skillplus {
+    flex-direction: column;
+    /*width: 100%;
+     translate: 0 -100px;
+  }*/
+
+}
+
+.parent_cards {
+flex-direction: column;
+
+}
+  
+.justDoIt{
+   flex-direction: column;
+  
+}
+
+.company { 
+  flex-direction: column;
+}
+
+
+  /*.skills {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px)  {
+
+  .skillplus {
+
+    translate: none;
+  }
+
+}*/
