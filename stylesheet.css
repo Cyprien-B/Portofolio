@@ -120,13 +120,13 @@ header p {
   padding-bottom: 40px;
   width:min(1250px,90%);
   display: flex;
-  translate: 0 -200px;
+  transform:translateY(-200px);
   border-radius: 15px;
   border: 1px solid rgba(0,0,0,0.1);
   background-color: white;
   position: relative;  
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .skillplus img {
   display: block;
@@ -158,7 +158,7 @@ header p {
 }
 
 .work {
-  translate: 0 -140px;
+  transform: translateY(-140px);
 }
 
 .title-3 {
@@ -206,7 +206,7 @@ header p {
   height: 250px;
   width: 375px;
   border-radius: 15px;
-  translate: -20px -20px;
+  transform: translateY(-20px) translateX(-20px); 
   position: relative;
   text-align: center;
   justify-content: center;
@@ -302,7 +302,7 @@ header p {
   padding-bottom: 40px;
   width: 350px;
   display: flex;
-  translate: 0 -150px;
+ transform: translateY(-150px);
   border-radius: 15px;
   border: 1px solid rgba(0,0,0,0.1);
   background-color: white;
@@ -336,7 +336,7 @@ header p {
 }
 
 .texteAvantLeFooter {
- translate: 0 -120px;
+ transform: translateY(-140px);
 }
 
 .texteAvantLeFooter h2{
@@ -367,6 +367,174 @@ header p {
   transition: ease-in-out .25s;
 }
 
+/*ici on essai le crousel----------------------------------------------------------*/
+#imgPascal {
+  height: 250px;
+  border-radius: 50%;
+}
+
+ody {
+  font-family: 'Montserrat', sans-serif;
+  color: #FFFFFF;
+  background-color: var(--main-bg-color);
+}
+
+.carousel {
+  position: relative;
+  left: 50%;
+  width: 100%;
+  padding: 90px 0;
+  text-align: center;
+  background-color:var(--main-bg-color);
+  transform: translate(-50%, 0);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  animation: 0.5s ease-in-out;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next {
+  display: block;
+}
+
+.carousel-inner > .next {
+  position: relative;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .to-left {
+  animation-name: left;
+}
+
+.carousel-inner > .from-right {
+  animation-name: right;
+}
+
+.carousel-inner > .to-right {
+  animation-name: right;
+  animation-direction: reverse;
+}
+
+.carousel-inner > .from-left {
+  animation-name: left;
+  animation-direction: reverse;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 30px 90px;
+  font-size: 32px;
+}
+
+.author {
+  margin: 0;
+  opacity: 0.5;
+}
+
+.carousel-control {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 15%;
+  cursor: pointer;
+}
+
+.carousel-control.right {
+  right: 0;
+  left: auto;
+}
+
+.carousel-control > .arrow {
+
+  top: 50%;
+  left: 10px;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjYiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNiAyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+QXJyb3c8L3RpdGxlPjxwYXRoIGQ9Ik0yNS42IDEwLjk3NGwtOC41MyA4LjYyYTEuMzYgMS4zNiAwIDAgMS0xLjkzNS4wMDMgMS4zODcgMS4zODcgMCAwIDEtLjAwMi0xLjk1bDYuMjAxLTYuMjY4SDEuMzY4QTEuMzc0IDEuMzc0IDAgMCAxIDAgMTBjMC0uNzYyLjYxMy0xLjM4IDEuMzY4LTEuMzhoMTkuOTY2bC02LjItNi4yNjdhMS4zODcgMS4zODcgMCAwIDEgLjAwMS0xLjk1IDEuMzYgMS4zNiAwIDAgMSAxLjkzNi4wMDJsOC41MyA4LjYyMWMuNTMyLjUzOC41MzIgMS40MSAwIDEuOTQ4IiBmaWxsPSIjRkZGRkZGIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48L3N2Zz4=") center center no-repeat;
+  background-size: 26px 20px;
+  opacity: 0.6;
+  transform: translateY(-250px);
+}
+
+.carousel-control > .arrow:hover {
+  opacity: 0.8;
+}
+
+.carousel-control > .arrow.left {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.carousel-control > .arrow.right {
+  right: 50%;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  transform: translateX(-50%);
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border: 1px solid #FFFFFF;
+  border-radius: 10px;
+}
+
+.carousel-indicators li.active {
+  background-color: #FFFFFF;
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@keyframes left {
+  from {
+    left: 0;
+  }
+  to {
+    left: -100%;
+  }
+}
+
+@keyframes right {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0;
+  }
+}
 
 
 /*essai des mediaquery */
